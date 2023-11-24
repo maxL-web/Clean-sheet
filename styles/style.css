@@ -1,11 +1,13 @@
 body {
-    font-family:'Inter', sans-serif;
+    font-family:Inter, sans-serif;
     font-weight: 400;
     line-height: 21.6px;
 }
+
 .container {
-    width: 360px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 360px;
+    margin: auto;
     padding: 0 20px;
 }
 
@@ -20,20 +22,21 @@ body {
 }
 
 .header__menu{
-    padding: 24px 0;
     display: flex;
     justify-content: space-between;
+    align-items: top;
+    padding: 24px 0;
+    
 }
+
 .header__nav {
     color:  #F5F5F5;
-    font-family: Inter;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 19.2px; 
 }
 
-.header__menu {}
 .header__menu-item + .header__menu-item {
     margin-top: 14px;
 }
@@ -41,7 +44,6 @@ body {
 .header__menu-link {
     color: #F5F5F5 ;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: Inter;
     font-size: 16px;
     line-height: 19.2px; /* 120% */
 }
@@ -53,7 +55,7 @@ body {
 .cover {
     background-image: url(/images/cover.png);
     background-size:95% auto;
-    background-position: center;
+    background-position:right center;
     background-repeat: no-repeat;
     padding-bottom: 30px;
 }
@@ -61,7 +63,7 @@ body {
 .cover__span-text {
     display: block;
     color: #FFF;
-    font-family: EB Garamond;
+    font-family: 'EB Garamond', sans-serif;
     font-size: 72px;
     font-style: normal;
     font-weight: 400;
@@ -86,8 +88,7 @@ body {
 
 .intro__text{
     display: flex;
-    color: var(--text-gray, #CCC);
-    font-family: Inter;
+    color:#ccc;
     line-height: 120%; /* 19.2px */
     margin-bottom: 24px;
 }
@@ -112,22 +113,12 @@ body {
 
 .reasons__title {
     color: #131313;
-    font-family: EB Garamond;
+    font-family: 'EB Garamond', sans-serif;
     text-align: right;
     font-size: 28px;
     font-style: normal;
     font-weight: 500;
     line-height: 115%; /* 32.2px */  
-}
-
-.reasons__title-one{
-    text-align: right;
-    display: block;
-}
-
-.reasons__title-two {
-    text-align: left;
-    display: block;
 }
 
 .reasons-text {
@@ -144,7 +135,6 @@ body {
     gap: 16px;
     margin-left: 12px;
     color:#131313;
-    font-family: Inter;
     font-style: normal;
     font-weight: 400;
     line-height: 21.6px; /* 135% */
@@ -161,7 +151,7 @@ body {
 
 .how__title {
     color:#fff;
-    font-family: EB Garamond;
+    font-family: 'EB Garamond', sans-serif;
     text-align: right;
     font-size: 28px;
     font-style: normal;
@@ -169,19 +159,20 @@ body {
     line-height: 115%; /* 32.2px */  
 }
 
-.how__title-one{
-    text-align: right;
+.span {
     display: block;
 }
 
-.how__title-two {
+.accent-right{
+    text-align: right;
+}
+
+.accent-left {
     text-align: left;
-    display: block;
 }
 
 .how__text {
     margin: 32px 0; 
-    font-family: Inter;
     font-size: 20px;
     line-height: 135%; /* 27px */
 }
@@ -210,13 +201,12 @@ body {
 }
 
 .card__author-name{
-font-family: Inter;
-font-weight: 700;
-line-height: 135%; /* 21.6px */
-}
+    font-weight: 700;
+    line-height: 135%; /* 21.6px */
+    }
 
 .card__subtitle {
-    font-family: EB Garamond;
+    font-family: 'EB Garamond', sans-serif;
     font-size: 22px;
     font-weight: 500;
     line-height: 135%; /* 29.7px */
@@ -234,7 +224,6 @@ line-height: 135%; /* 21.6px */
 
 .footer__social {
     color: #F5F5F5;
-    font-family: Inter;
     font-size: 14px;
     font-style: normal;
     line-height: 125%; /* 17.5px */
